@@ -15,7 +15,7 @@ contract MinimalERC721 is ERC721, Ownable, RoyaltiesV2Impl {
 
     bytes4 private constant _INTERFACE_ID_ERC2981 = 0x2a55205a;
 
-    constructor() ERC721("Minimal", "MIN") {}
+    constructor() ERC721("MinimalNFT", "ROYN") {}
 
     function mint(address to) public onlyOwner {
         super._mint(to, _tokenIdTracker.current());
